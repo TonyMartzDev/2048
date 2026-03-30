@@ -1,255 +1,490 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agile Wheel - Visualize Your Agile Journey</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/landing.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <svg class="logo-icon" viewBox="0 0 50 50" width="40" height="40">
-                    <circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
-                    <path d="M 25 5 L 25 25 L 40 35" stroke="currentColor" stroke-width="2" fill="none"/>
-                    <circle cx="25" cy="25" r="3" fill="currentColor"/>
-                </svg>
-                <span class="brand-name">Agile Wheel</span>
-            </div>
-            <div class="nav-links">
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#why-us" class="nav-link">Why Us</a>
-                <a href="#how-it-works" class="nav-link">How It Works</a>
-                <a href="login.html" class="btn btn-outline">Login</a>
-                <a href="login.html?signup=true" class="btn btn-primary">Get Started</a>
-            </div>
+      <div class="container">
+        <div class="nav-brand">
+          <svg class="logo-icon" viewBox="0 0 50 50" width="40" height="40">
+            <circle
+              cx="25"
+              cy="25"
+              r="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path
+              d="M 25 5 L 25 25 L 40 35"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle cx="25" cy="25" r="3" fill="currentColor" />
+          </svg>
+          <span class="brand-name">Agile Wheel</span>
         </div>
+        <div class="nav-links">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#why-us" class="nav-link">Why Us</a>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="login.html?signup=true" class="btn btn-primary"
+            >Get Started</a
+          >
+        </div>
+      </div>
     </nav>
 
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Visualize Your <span class="gradient-text">Agile Journey</span>
-                </h1>
-                <p class="hero-subtitle">
-                    The interactive project management platform designed for developers and scrum masters. 
-                    Navigate through agile stages with an intuitive wheel interface.
-                </p>
-                <div class="hero-cta">
-                    <a href="login.html?signup=true" class="btn btn-primary btn-large">Start Free Today</a>
-                    <a href="#how-it-works" class="btn btn-outline btn-large">See How It Works</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Free & Open Source</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">Zero</div>
-                        <div class="stat-label">Framework Overhead</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">Real-time</div>
-                        <div class="stat-label">Collaboration</div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Visualize Your <span class="gradient-text">Agile Journey</span>
+          </h1>
+          <p class="hero-subtitle">
+            The interactive project management platform designed for developers
+            and scrum masters. Navigate through agile stages with an intuitive
+            wheel interface.
+          </p>
+          <div class="hero-cta">
+            <a href="login.html?signup=true" class="btn btn-primary btn-large"
+              >Start Free Today</a
+            >
+            <a href="#how-it-works" class="btn btn-outline btn-large"
+              >See How It Works</a
+            >
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Free & Open Source</div>
             </div>
-            <div class="hero-visual">
-                <div class="wheel-preview">
-                    <svg viewBox="0 0 300 300" class="agile-wheel-demo">
-                        <defs>
-                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                        <circle cx="150" cy="150" r="140" fill="none" stroke="url(#grad1)" stroke-width="3" opacity="0.2"/>
-                        <circle cx="150" cy="150" r="120" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.3"/>
-                        <circle cx="150" cy="150" r="100" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.4"/>
-                        
-                        <g class="wheel-segment" data-stage="planning">
-                            <path d="M 150 150 L 150 10 A 140 140 0 0 1 270 90 Z" fill="url(#grad1)" opacity="0.6"/>
-                            <text x="180" y="70" fill="white" font-size="14" font-weight="bold">Planning</text>
-                        </g>
-                        
-                        <g class="wheel-segment" data-stage="development">
-                            <path d="M 150 150 L 270 90 A 140 140 0 0 1 270 210 Z" fill="url(#grad1)" opacity="0.5"/>
-                            <text x="240" y="155" fill="white" font-size="14" font-weight="bold">Dev</text>
-                        </g>
-                        
-                        <g class="wheel-segment" data-stage="testing">
-                            <path d="M 150 150 L 270 210 A 140 140 0 0 1 150 290 Z" fill="url(#grad1)" opacity="0.4"/>
-                            <text x="190" y="240" fill="white" font-size="14" font-weight="bold">Testing</text>
-                        </g>
-                        
-                        <g class="wheel-segment" data-stage="review">
-                            <path d="M 150 150 L 150 290 A 140 140 0 0 1 30 210 Z" fill="url(#grad1)" opacity="0.3"/>
-                            <text x="70" y="240" fill="white" font-size="14" font-weight="bold">Review</text>
-                        </g>
-                        
-                        <g class="wheel-segment" data-stage="retrospective">
-                            <path d="M 150 150 L 30 210 A 140 140 0 0 1 30 90 Z" fill="url(#grad1)" opacity="0.2"/>
-                            <text x="30" y="155" fill="white" font-size="14" font-weight="bold">Retro</text>
-                        </g>
-                        
-                        <g class="wheel-segment" data-stage="deployment">
-                            <path d="M 150 150 L 30 90 A 140 140 0 0 1 150 10 Z" fill="url(#grad1)" opacity="0.25"/>
-                            <text x="70" y="70" fill="white" font-size="14" font-weight="bold">Deploy</text>
-                        </g>
-                        
-                        <circle cx="150" cy="150" r="30" fill="url(#grad1)"/>
-                        <circle cx="150" cy="150" r="25" fill="white"/>
-                        <circle cx="150" cy="150" r="8" fill="url(#grad1)"/>
-                    </svg>
-                </div>
+            <div class="stat">
+              <div class="stat-number">Zero</div>
+              <div class="stat-label">Framework Overhead</div>
             </div>
+            <div class="stat">
+              <div class="stat-number">Real-time</div>
+              <div class="stat-label">Collaboration</div>
+            </div>
+          </div>
         </div>
+        <div class="hero-visual">
+          <div class="wheel-preview">
+            <svg viewBox="0 0 420 420" class="agile-wheel-demo">
+              <defs>
+                <filter id="shadow">
+                  <feDropShadow
+                    dx="0"
+                    dy="3"
+                    stdDeviation="3"
+                    flood-opacity="0.25"
+                  />
+                </filter>
+                <!-- Arrow marker that auto-orients along the path -->
+                <marker
+                  id="arrowhead"
+                  markerWidth="30"
+                  markerHeight="24"
+                  refX="0"
+                  refY="12"
+                  orient="auto"
+                  markerUnits="userSpaceOnUse"
+                >
+                  <polygon points="0,0 30,12 0,24" fill="#667eea" />
+                </marker>
+              </defs>
+
+              <g class="wheel-fixed" transform="translate(210,210)">
+                <!-- Donut segments using stroke-dasharray technique -->
+                <!-- circumference = 2 * PI * 105 = 659.73, each segment = 659.73/7 = 94.25 -->
+
+                <!-- Segment 7: Deploy (Red) -->
+                <circle
+                  r="105"
+                  fill="none"
+                  stroke="#E74C3C"
+                  stroke-width="70"
+                  stroke-dasharray="94.25 565.48"
+                  stroke-dashoffset="0"
+                  transform="rotate(-90)"
+                />
+                <!-- Segment 1: Planning (Orange) -->
+                <circle
+                  r="105"
+                  fill="none"
+                  stroke="#E67E22"
+                  stroke-width="70"
+                  stroke-dasharray="94.25 565.48"
+                  stroke-dashoffset="-94.25"
+                  transform="rotate(-90)"
+                />
+                <!-- Segment 2: Design (Blue) -->
+                <circle
+                  r="105"
+                  fill="none"
+                  stroke="#3498DB"
+                  stroke-width="70"
+                  stroke-dasharray="94.25 565.48"
+                  stroke-dashoffset="-188.5"
+                  transform="rotate(-90)"
+                />
+                <!-- Segment 3: Development (Dark Blue) -->
+                <circle
+                  r="105"
+                  fill="none"
+                  stroke="#2C3E50"
+                  stroke-width="70"
+                  stroke-dasharray="94.25 565.48"
+                  stroke-dashoffset="-282.75"
+                  transform="rotate(-90)"
+                />
+                <!-- Segment 4: Testing (Dark Gray) -->
+                <circle
+                  r="105"
+                  fill="none"
+                  stroke="#455A64"
+                  stroke-width="70"
+                  stroke-dasharray="94.25 565.48"
+                  stroke-dashoffset="-377"
+                  transform="rotate(-90)"
+                />
+                <!-- Segment 5: Review (Medium Gray) -->
+                <circle
+                  r="105"
+                  fill="none"
+                  stroke="#607D8B"
+                  stroke-width="70"
+                  stroke-dasharray="94.25 565.48"
+                  stroke-dashoffset="-471.25"
+                  transform="rotate(-90)"
+                />
+                <!-- Segment 6: Retro (Teal) -->
+                <circle
+                  r="105"
+                  fill="none"
+                  stroke="#16A085"
+                  stroke-width="70"
+                  stroke-dasharray="94.25 565.48"
+                  stroke-dashoffset="-565.5"
+                  transform="rotate(-90)"
+                />
+
+                <!-- Labels centered inside each segment (radius ~105, angle at center of each 51.43° segment) -->
+                <!-- Segment angles: Deploy 0-51.43°, Planning 51.43-102.86°, Design 102.86-154.29°, Dev 154.29-205.71°, Testing 205.71-257.14°, Review 257.14-308.57°, Retro 308.57-360° -->
+                <text
+                  x="40"
+                  y="-95"
+                  fill="white"
+                  font-size="13"
+                  font-weight="bold"
+                  text-anchor="middle"
+                >
+                  Deploy
+                </text>
+                <text
+                  x="95"
+                  y="-25"
+                  fill="white"
+                  font-size="11"
+                  font-weight="bold"
+                  text-anchor="middle"
+                >
+                  Planning
+                </text>
+                <text
+                  x="80"
+                  y="65"
+                  fill="white"
+                  font-size="13"
+                  font-weight="bold"
+                  text-anchor="middle"
+                >
+                  Design
+                </text>
+                <text
+                  x="15"
+                  y="105"
+                  fill="white"
+                  font-size="12"
+                  font-weight="bold"
+                  text-anchor="middle"
+                >
+                  Dev
+                </text>
+                <text
+                  x="-65"
+                  y="80"
+                  fill="white"
+                  font-size="11"
+                  font-weight="bold"
+                  text-anchor="middle"
+                >
+                  Testing
+                </text>
+                <text
+                  x="-95"
+                  y="-5"
+                  fill="white"
+                  font-size="12"
+                  font-weight="bold"
+                  text-anchor="middle"
+                >
+                  Review
+                </text>
+                <text
+                  x="-55"
+                  y="-80"
+                  fill="white"
+                  font-size="12"
+                  font-weight="bold"
+                  text-anchor="middle"
+                >
+                  Retro
+                </text>
+
+                <!-- Center circle -->
+                <circle r="65" fill="white" filter="url(#shadow)" />
+                <text
+                  x="0"
+                  y="-5"
+                  fill="#2C3E50"
+                  font-size="20"
+                  font-weight="bold"
+                  text-anchor="middle"
+                >
+                  Agile
+                </text>
+                <text
+                  x="0"
+                  y="18"
+                  fill="#7F8C8D"
+                  font-size="13"
+                  text-anchor="middle"
+                >
+                  Wheel
+                </text>
+              </g>
+
+              <!-- Rotating curved arrow wrapping around the wheel perimeter -->
+              <g class="rotating-arrow">
+                <!-- Curved arrow body with auto-orienting arrowhead marker -->
+                <path
+                  d="M 72,320 A 165,165 0 0,1 55,95"
+                  fill="none"
+                  stroke="#667eea"
+                  stroke-width="12"
+                  stroke-linecap="round"
+                  marker-end="url(#arrowhead)"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="why-us" class="why-us">
-        <div class="container">
-            <h2 class="section-title">What Sets Us Apart</h2>
-            <p class="section-subtitle">Built by developers, for developers. No compromise on performance or usability.</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Visual Agile Workflow</h3>
-                    <p>Navigate through agile stages with our unique interactive wheel interface. See your project's lifecycle at a glance.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Lightning Fast</h3>
-                    <p>Zero framework overhead means instant load times. Built with pure JavaScript for maximum performance.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3>Real-time Collaboration</h3>
-                    <p>Seamless coordination between developers and scrum masters. Everyone stays in sync, always.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Beautiful & Intuitive</h3>
-                    <p>Modern design that makes project tracking effortless. No learning curve, just start managing.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Privacy First</h3>
-                    <p>Your data stays with you. Local-first architecture with optional cloud sync coming soon.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Developer-Centric</h3>
-                    <p>Built with developers in mind. Keyboard shortcuts, CLI integration, and API access included.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">What Sets Us Apart</h2>
+        <p class="section-subtitle">
+          Built by developers, for developers. No compromise on performance or
+          usability.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Visual Agile Workflow</h3>
+            <p>
+              Navigate through agile stages with our unique interactive wheel
+              interface. See your project's lifecycle at a glance.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Lightning Fast</h3>
+            <p>
+              Zero framework overhead means instant load times. Built with pure
+              JavaScript for maximum performance.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Real-time Collaboration</h3>
+            <p>
+              Seamless coordination between developers and scrum masters.
+              Everyone stays in sync, always.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>Beautiful & Intuitive</h3>
+            <p>
+              Modern design that makes project tracking effortless. No learning
+              curve, just start managing.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Privacy First</h3>
+            <p>
+              Your data stays with you. Local-first architecture with optional
+              cloud sync coming soon.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Developer-Centric</h3>
+            <p>
+              Built with developers in mind. Keyboard shortcuts, CLI
+              integration, and API access included.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-subtitle">Get started in minutes, master it in hours</p>
-            
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Create Your Project</h3>
-                        <p>Sign up and create your first agile project. Invite your team members and assign roles.</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Navigate the Wheel</h3>
-                        <p>Click through agile stages on the interactive wheel. Track progress visually as you move through each phase.</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Collaborate & Ship</h3>
-                        <p>Work together in real-time, manage sprints, and deliver amazing software faster than ever.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">
+          Get started in minutes, master it in hours
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Create Your Project</h3>
+              <p>
+                Sign up and create your first agile project. Invite your team
+                members and assign roles.
+              </p>
             </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Navigate the Wheel</h3>
+              <p>
+                Click through agile stages on the interactive wheel. Track
+                progress visually as you move through each phase.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Collaborate & Ship</h3>
+              <p>
+                Work together in real-time, manage sprints, and deliver amazing
+                software faster than ever.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="features" class="features-detailed">
-        <div class="container">
-            <div class="feature-showcase">
-                <div class="showcase-content">
-                    <h2>Interactive Agile Wheel</h2>
-                    <p>Our signature feature that sets us apart. The agile wheel provides a visual representation of your project's lifecycle, making it easy to see where you are and where you're going.</p>
-                    <ul class="feature-list">
-                        <li>✓ Click to navigate between stages</li>
-                        <li>✓ Visual progress indicators</li>
-                        <li>✓ Stage-specific task management</li>
-                        <li>✓ Smooth animations and transitions</li>
-                    </ul>
-                </div>
-                <div class="showcase-image">
-                    <div class="mockup-browser">
-                        <div class="browser-header">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <div class="browser-content">
-                            <div class="wheel-mockup"></div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="feature-showcase">
+          <div class="showcase-content">
+            <h2>Interactive Agile Wheel</h2>
+            <p>
+              Our signature feature that sets us apart. The agile wheel provides
+              a visual representation of your project's lifecycle, making it
+              easy to see where you are and where you're going.
+            </p>
+            <ul class="feature-list">
+              <li>✓ Click to navigate between stages</li>
+              <li>✓ Visual progress indicators</li>
+              <li>✓ Stage-specific task management</li>
+              <li>✓ Smooth animations and transitions</li>
+            </ul>
+          </div>
+          <div class="showcase-image">
+            <div class="mockup-browser">
+              <div class="browser-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="browser-content">
+                <div class="wheel-mockup"></div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Transform Your Agile Workflow?</h2>
-                <p>Join developers and scrum masters who are already visualizing their success.</p>
-                <a href="login.html?signup=true" class="btn btn-primary btn-large">Get Started Free</a>
-            </div>
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Transform Your Agile Workflow?</h2>
+          <p>
+            Join developers and scrum masters who are already visualizing their
+            success.
+          </p>
+          <a href="login.html?signup=true" class="btn btn-primary btn-large"
+            >Get Started Free</a
+          >
         </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <svg class="logo-icon" viewBox="0 0 50 50" width="32" height="32">
-                        <circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
-                        <path d="M 25 5 L 25 25 L 40 35" stroke="currentColor" stroke-width="2" fill="none"/>
-                        <circle cx="25" cy="25" r="3" fill="currentColor"/>
-                    </svg>
-                    <span>Agile Wheel</span>
-                </div>
-                <div class="footer-links">
-                    <a href="#features">Features</a>
-                    <a href="#why-us">Why Us</a>
-                    <a href="#how-it-works">How It Works</a>
-                    <a href="https://github.com" target="_blank">GitHub</a>
-                </div>
-                <div class="footer-copy">
-                    <p>&copy; 2026 Agile Wheel. Open Source & Free Forever.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <svg class="logo-icon" viewBox="0 0 50 50" width="32" height="32">
+              <circle
+                cx="25"
+                cy="25"
+                r="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M 25 5 L 25 25 L 40 35"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+              />
+              <circle cx="25" cy="25" r="3" fill="currentColor" />
+            </svg>
+            <span>Agile Wheel</span>
+          </div>
+          <div class="footer-links">
+            <a href="#features">Features</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+          </div>
+          <div class="footer-copy">
+            <p>&copy; 2026 Agile Wheel. Open Source & Free Forever.</p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="js/state.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/landing.js"></script>
-</body>
+  </body>
 </html>
